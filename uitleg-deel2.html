@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        console.log('Mijn website werkt');
+
+        var a = "Mijn eerste variabel";
+        var b = 3;
+
+        // alert (a + b);
+
+        // Function declaration
+        function test() {
+            alert('In de test');
+
+            // Uitlezen
+            var element1 = document.getElementById('invoer1');
+            alert('#' + element1.value + '#')
+
+            // type is
+            // Toeschrijven
+            document.getElementById('antwoord').innerText = "Nog geen antwoord";
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Rekenmachine</h1>
+    
+    <input id="invoer1" type="text" onclick="alert('In element');">
+    <button type="button" onclick=test();">
+        Click me
+    </button>
+
+    <span>Het antwoord is: </span>
+    <span id="antwoord"</span>
+   
+</body>
+</html>
